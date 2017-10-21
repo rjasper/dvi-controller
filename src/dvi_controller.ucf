@@ -1,0 +1,42 @@
+
+# 33 MHz FPGA Clock
+NET "CLK"      LOC = "AH17"
+# CPU Reset Button
+NET "RESET"    LOC = "E9"
+
+#entity dvi_controller is
+#  port (
+#      CLK       : in  STD_LOGIC;
+#      RESET     : in  STD_LOGIC;
+#      RAW_DATA  : in  STD_LOGIC_VECTOR(23 downto 0);
+#      SEND_DATA : out STD_LOGIC;
+#      XCLK      : out STD_LOGIC;
+#      XCLK_INV  : out STD_LOGIC;
+#      RESET_B   : out STD_LOGIC;
+#      H         : out STD_LOGIC;
+#      V         : out STD_LOGIC;
+#      DE        : out STD_LOGIC;
+#      D         : out STD_LOGIC_VECTOR(11 downto 0)
+#    );
+#end dvi_controller;
+
+# RAW_DATA yet NC
+
+NET "XCLK"     LOC = "AL11"
+NET "XCLK_INV" LOC = "AL10"
+NET "RESET_B"  LOC = "AK6"
+NET "H"        LOC = "AM12"
+NET "V"        LOC = "AM11"
+NET "DE"       LOC = "AE8"
+NET "D<0>"     LOC = "AB8"
+NET "D<1>"     LOC = "AC8"
+NET "D<2>"     LOC = "AN12"
+NET "D<3>"     LOC = "AP12"
+NET "D<4>"     LOC = "AA9"
+NET "D<5>"     LOC = "AA8"
+NET "D<6>"     LOC = "AM13"
+NET "D<7>"     LOC = "AN13"
+NET "D<8>"     LOC = "AA10"
+NET "D<9>"     LOC = "AB10"
+NET "D<10>"    LOC = "AP14"
+NET "D<11>"    LOC = "AN14"
